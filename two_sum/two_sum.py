@@ -1,6 +1,7 @@
+from typing import List
 # Naive solution
 
-def naive_two_sum(nums, target):
+def naive_two_sum(nums: List[int], target: int) -> List[int]:
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
             if nums[i] + nums[j] == target:
@@ -9,7 +10,7 @@ def naive_two_sum(nums, target):
 
 # Hashmap solution
 
-def two_sum(nums, target):
+def two_sum(nums: List[int], target: int) -> List[int]:
     map = {}
 
     # track both index and value of nums
